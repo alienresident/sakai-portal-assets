@@ -1,14 +1,21 @@
 # Getting Sassy with Sakai
 
 ## Summary 
-While we don't want to alienate our current users and drastically change the process of creating skins. 
+Use Sass to create the new optional responsive skins (Morpheus) for Sakai 10. Sass enables easier customization and variation without duplicating code and effort. We can do this in such a way that we don't drastically changing the process of creating skins and alienate our current users. 
 	
-### Goals of using Sass
-* Organization
+### Advantages of using Sass
+* File organization
 * DRY and 'Object Orientated' CSS
-* Ease of customization
-* Separate presentation styles from layout for responsive designs
-* Create Style Guide and Design Patterns
+* Separate presentation styles from layout style for responsive designs
+* One codebase: allowing for easy customization and variations
+* Create definitive Style Guide and Design Patterns Library
+
+### Proposed workflow
+Currently 
+
+
+### Example file structures
+  
 
 
 Example file structure for the skin folder:   
