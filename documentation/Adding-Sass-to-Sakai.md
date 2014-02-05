@@ -22,7 +22,7 @@ As the CSS will be broken down into small discrete files. Maintainers will be ab
 ### Example file structures
 Example file structure for the skin folder:   
 
-```
+```bash
 morpheus-master/  
 morpheus-default/
 morpheus-examp-u/  
@@ -31,7 +31,7 @@ morpheus-rtl/
 
 Example skins' file structure one level deeper: contains only stylesheets and images.
 
-```   
+```bash   
 morpheus-default/     
 	images/         
 	portal.css      
@@ -54,7 +54,7 @@ morpheus-rtl/
 
 The big difference is that these example style files will be compiled using a build-script (or perhaps a pom.xml) 
  
-```   
+```bash   
 morpheus-master/
 	config.rb         
 	images/
@@ -65,7 +65,7 @@ morpheus-master/
 
 In the Sass directory there will be a corresponding `scss` file for each compiled `css` file (any `scss` starting with an `_` is consider a 'partial' and is not compiled into it's own css file). 
 
-```   
+```bash   
 morpheus-master/
 	config.rb            
 	images/
@@ -88,7 +88,7 @@ morpheus-master/
 
 The build script will generate the css for the various example skins. Skin specific values will be control by the `morpheus-master/sass/_configurations.scss` and pull variations from the `morpheus-master/sass/theme` directory.
 
-```   
+```bash   
 morpheus-master/
 	...
 	sass/
