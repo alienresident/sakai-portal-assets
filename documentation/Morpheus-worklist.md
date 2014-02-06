@@ -20,8 +20,19 @@ New UI for Sakai CLE (10). A new (responsive) User Interface portal skin initiat
 	
 ## General Sakai Dev Questions
 
-* Does each tool implement it's own head document or is there a central doc?
-*  
+* Does each tool implement it's own head document or is there a central area?  
+ 
+Is this a list of all the files to do with creating a header for tools?
+
+``` 
+./login/login-authn-tool/tool/src/java/org/sakaiproject/login/tool/AuthnPortal.java
+./portal/portal-impl/impl/src/java/org/sakaiproject/portal/charon/CharonPortal.java
+./portal/portal-impl/impl/src/java/org/sakaiproject/portal/charon/SkinnableCharonPortal.java
+./portal/portal-render-engine-impl/impl/src/java/org/sakaiproject/portal/charon/velocity/VelocityPortalRenderEngine.java
+./portal/portal-render-engine-impl/pack/src/test/org/sakaiproject/portal/charon/test/MockCharonPortal.java
+./portal/portal-tool/tool/src/java/org/sakaiproject/portal/tool/ToolPortal.java
+``` 
+  
 
 ## Open Strategic Questions
 * __Mobile:__ Help links where do the popup windows go to? Maybe we should add the popup via JS listener rather than hardcoded to the link?

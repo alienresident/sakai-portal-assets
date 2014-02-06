@@ -10,14 +10,21 @@ Use [Sass](http://sass-lang.com "Semantically Awesome Style Sheets") to create t
 * One codebase: allowing for easier customization and variation
 * Create definitive Style Guide and Design Patterns Library
 
-### Proposed workflow
+### Current workflow
 Currently Sakai ships with a large number of example skins (neo-default, neo-default-horiz, neo-default29, neo-examp-u, neo-gen-u, neo-oae, neo-rtl, neo-some-u, neo-ux). The skinning process has been to copy one example skin and start customizing the CSS. i.e. copy `neo-examp-u` to `neo-MY-u`. We want to keep this option available for institutions while switching to Sass for core maintainers.
 
+#### Issue of introducing Sass into the current workflow
+Sass is a CSS preprocessor so any edits directly on the CSS files will be overwritten the next time the Sass compiled. Edits need to be added directly to the SCSS files instead. The barrier to entry is low as SCSS is a superset of CSS and vanilla CSS will work. The only issue is to make sure that developers understand the modified workflow.  
+
+### Proposed workflow
 The proposed workflow is to create a `morpheus-master` folder which will contain the sass scaffolding and a build script (shell script?). The build script will generate and copy the css to the example skins (morpheus-default, morpheus-examp-u, morpheus-rtl). The build script will be run after changes to the sass have been made but before checking in the new CSS to the repo.
 
 The more adventurous skin customizers could take advantage of Sass to customize their skins. There will be documentation on how to do and config files from the example skins. 
 
 As the CSS will be broken down into small discrete files. Maintainers will be able to easily identify what parts of the css they need to update. 
+
+#### Sakai 11 workflow
+If morpheus becomes the default skin in Sakai 11 it then makes sense to use the [sass maven plugin](https://github.com/Jasig/sass-maven-plugin) to preprocess the Sass into CSS. If this is configurable to only be used if morpheus is selected then it would be good to add it for Sakai 10.   
 
 ### Example file structures
 Example file structure for the skin folder:   
@@ -63,7 +70,7 @@ morpheus-master/
 	build-script.sh  // OR pom.xml?      
 ```   
 
-In the Sass directory there will be a corresponding `.scss` file for each compiled `.css` file. __Note:__ any `scss` beginning with an `_` is consider a 'partial' and is not compiled into a corresponding CSS file. 
+In the Sass directory there will be a corresponding `.scss` file for each processed `.css` file. __Note:__ any `scss` beginning with an `_` is consider a 'partial' and is not processed into a corresponding CSS file. 
 
 ```   
 morpheus-master/
