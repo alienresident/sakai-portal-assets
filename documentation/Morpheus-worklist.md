@@ -1,4 +1,4 @@
-### MORPHEUS
+# MORPHEUS
 Mobile Optimized Responsive Portal for Higher Education Using Sass
 
 New UI for Sakai CLE (10). A new (responsive) User Interface portal skin initiative is in development. Help contribute ideas, design, and code towards a new style guide  and design pattern library.
