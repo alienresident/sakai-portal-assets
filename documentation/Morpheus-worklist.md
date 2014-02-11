@@ -6,19 +6,22 @@ New UI for Sakai CLE (10). A new (responsive) User Interface portal skin initiat
 ## Current Dev Questions
 
 * Dev documentation and assets is now in a [GitHub repo](https://github.com/alienresident/sakai-portal-assets)	
-	* Gonzalo's github account?
+	* Gonzalo's github account: [gsilver](https://github.com/gsilver)
 	 		
-* Getting into Trunk Friday 2/7? 
-	* Progress? 
-	* Best avenue of approach?
-* Moving ~~VMs~~ and JS to skin folder
+* ~~Getting into Trunk Friday 2/7?~~ DONE!!
+   
+* Moving VMs to skin folder
 	* Having trouble loading the VMs; It may be the parse functions' relative paths `#parse("/vm/morpheus/includeTabs.vm")`.
 	* Here's the Jira [SAK-25456](https://jira.sakaiproject.org/browse/SAK-25456). 
 	* It maybe related to the [LibraryWebappLoader.java](http://source.sakaiproject.org/viewsvn/portal/trunk/portal-render-engine-impl/impl/src/java/org/sakaiproject/portal/charon/velocity/LibraryWebappLoader.java?view=markup&pathrev=133274) Need to get John Bush's input. Jira or Email?
 	* We should do a merge with portal trunk! That way we can do a merge and bring this in as it'll make testing easier.
-	* Should we still move the JS? Are there other JS files we should move?   
+	
+* Moving JS to skin folder
+	* ~~Should we still move the JS?~~ YES   
+	* Are there other JS files we should move? MAYBE
+	
 * Adding Sass to Sakai strategies and documentation
-	* Will add an outline document.
+	* ~~Will add an~~ [Outline Document](https://github.com/alienresident/sakai-portal-assets/blob/master/documentation/Adding-Sass-to-Sakai.md)   
 	
 ## General Sakai Dev Questions
 
