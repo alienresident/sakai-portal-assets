@@ -43,3 +43,12 @@ Is this a list of all the files to do with creating a header for tools?
 * __Mobile:__ Help links where do the popup windows go to? Maybe we should add the popup via JS listener rather than hardcoded to the link?
 * __Moblie:__ We need a [responsive table](http://css-tricks.com/responsive-data-table-roundup/) strategy.
 
+## UMich worklist
+
+* Javascript: To optional set the drop down
+* Markup for Tool Nav
+* Tool head add IE stylesheets
+* Add tool.id class to body
+* 
+
+
