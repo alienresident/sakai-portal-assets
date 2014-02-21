@@ -57,6 +57,7 @@ Is this a list of all the files to do with creating a header for tools?
 * Tool head add IE stylesheets (G will investigate)
 * Add tool.id class to body tag (G will investigate)
 * HTML 5 and ARIA are we covering the basics
-* Role Switcher to drop down from Select Menu
+* Role Switcher to drop down from Select Menu (G)
+* Morpheus language bundle can we change things independently from Neo
 
 
