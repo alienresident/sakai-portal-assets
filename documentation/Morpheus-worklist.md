@@ -56,5 +56,7 @@ Is this a list of all the files to do with creating a header for tools?
 * Markup for Tool Nav (G)
 * Tool head add IE stylesheets (G will investigate)
 * Add tool.id class to body tag (G will investigate)
+* HTML 5 and ARIA are we covering the basics
+* Role Switcher to drop down from Select Menu
 
 
