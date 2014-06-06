@@ -24,7 +24,7 @@ The more adventurous skin customizers could take advantage of Sass to customize 
 As the CSS will be broken down into small discrete files. Maintainers will be able to easily identify what parts of the css they need to update. 
 
 #### Sakai 11 workflow
-If morpheus becomes the default skin in Sakai 11 it then makes sense to use the [sass maven plugin](https://github.com/Jasig/sass-maven-plugin) to preprocess the Sass into CSS. If this is configurable to only be used if morpheus is selected then it would be good to add it for Sakai 10.   
+If morpheus becomes the default skin in Sakai 11 it then makes sense to use the [sass maven plugin](https://github.com/Jasig/sass-maven-plugin) to preprocess the Sass into CSS. If this is configurable to only be used if morpheus is selected then it would be good to add it for Sakai 10.
 
 ### Example file structures
 Example file structure for the skin folder:   
@@ -59,7 +59,7 @@ morpheus-rtl/
 	tool-ie.css  
 ```   
 
-The big difference is that these example style files will be compiled using a build-script (or perhaps a pom.xml) 
+The big difference is that these example style files will be compiled using `sakai_compass_compile.rb`
  
 ```   
 morpheus-master/
@@ -67,7 +67,7 @@ morpheus-master/
 	images/
 	sass/
 	styleguide/
-	build-script.sh  // OR pom.xml?      
+	sakai_compass_compile.rb     
 ```   
 
 In the Sass directory there will be a corresponding `.scss` file for each processed `.css` file. __Note:__ any `scss` beginning with an `_` is consider a 'partial' and is not processed into a corresponding CSS file. 
@@ -108,7 +108,3 @@ morpheus-master/
 		...  
 	...       
 ```
-
-
-  
-
