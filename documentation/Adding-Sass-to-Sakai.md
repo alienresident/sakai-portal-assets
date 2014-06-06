@@ -104,7 +104,7 @@ morpheus-master/
 			_morpheus-default.scss
 			_morpheus-examp-u.scss  
 			_morpheus-rtl.scss	
-		_configs.scss
+		_configurations.scss
 		...  
 	...       
 ```
