@@ -61,3 +61,14 @@ Is this a list of all the files to do with creating a header for tools?
 * Morpheus language bundle can we change things independently from Neo
 
 
+## Open Apereo worklist
+
+### Road Map: What's next?
+
+1. Finish adding modules from NYU Classes code base
+2. Responsive menus for devices
+3. Responsive typography
+4. Flesh out examples skins
+5. User Testing
+6. Documentation
+
