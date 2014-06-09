@@ -17,7 +17,7 @@ Currently Sakai ships with a large number of example skins (neo-default, neo-def
 Sass is a CSS preprocessor so any edits directly on the CSS files will be overwritten the next time the Sass compiled. Edits need to be added directly to the SCSS files instead. The barrier to entry is low as SCSS is a superset of CSS and vanilla CSS will work. The only issue is to make sure that developers understand the modified workflow.  
 
 ### Proposed workflow
-The proposed workflow is to create a `morpheus-master` folder which will contain the sass scaffolding and a build script (shell script?). The build script will generate and copy the css to the example skins (morpheus-default, morpheus-examp-u, morpheus-rtl). The build script will be run after changes to the sass have been made but before checking in the new CSS to the repo.
+The proposed workflow is to create a `morpheus-master` folder which will contain the sass scaffolding and a compile script (ruby script). The compile script will generate and copy the css to the example skins (morpheus-default, morpheus-examp-u, morpheus-rtl). The compile script will be run after changes to the sass have been made but _before_ checking in the new CSS to the repo.
 
 The more adventurous skin customizers could take advantage of Sass to customize their skins. There will be documentation on how to do and config files from the example skins. 
 
@@ -70,7 +70,7 @@ morpheus-master/
 	sakai_compass_compile.rb     
 ```   
 
-In the Sass directory there will be a corresponding `.scss` file for each processed `.css` file. __Note:__ any `scss` beginning with an `_` is consider a 'partial' and is not processed into a corresponding CSS file. 
+In the Sass directory there will be a corresponding `.scss` file for each processed `.css` file. __Note:__ any `scss` beginning with a `_` is consider a 'partial' and is not processed into a corresponding CSS file. 
 
 ```   
 morpheus-master/
@@ -90,10 +90,10 @@ morpheus-master/
 		tool.scss
 		tool-ie.scss
 	styleguide/
-	build-script.sh       
+	sakai_compass_compile.rb
 ```
 
-The build script will be used to generate the css for the various example skins. Skin specific values will be controlled in the `morpheus-master/sass/_configurations.scss` and this will pull in variations from the `morpheus-master/sass/theme` directory.
+The compile script will be used to generate the css for the various example skins. Skin specific values will be controlled in the `morpheus-master/sass/_configurations.scss` and this will pull in variations from the `morpheus-master/sass/theme` directory.
 
 ```   
 morpheus-master/
