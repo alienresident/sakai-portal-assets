@@ -59,7 +59,7 @@ morpheus-rtl/
 	tool-ie.css  
 ```   
 
-The big difference is that these example style files will be compiled using `sakai_compass_compile.rb`
+The big difference is that these example style files will be compiled using `Sakai-Compass-Compile.rb`
  
 ```   
 morpheus-master/
@@ -67,7 +67,7 @@ morpheus-master/
 	images/
 	sass/
 	styleguide/
-	sakai_compass_compile.rb     
+	Sakai-Compass-Compile.rb     
 ```   
 
 In the Sass directory there will be a corresponding `.scss` file for each processed `.css` file. __Note:__ any `scss` beginning with a `_` is consider a 'partial' and is not processed into a corresponding CSS file. 
@@ -90,7 +90,7 @@ morpheus-master/
 		tool.scss
 		tool-ie.scss
 	styleguide/
-	sakai_compass_compile.rb
+	Sakai-Compass-Compile.rb
 ```
 
 The compile script will be used to generate the css for the various example skins. Skin specific values will be controlled in the `morpheus-master/sass/_configurations.scss` and this will pull in variations from the `morpheus-master/sass/theme` directory.
