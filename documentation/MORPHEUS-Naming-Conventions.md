@@ -3,8 +3,12 @@
 * [CSS](#CSS-Naming-Conventions-for-MORPHEUS)
 
 ## CSS Naming Conventions for MORPHEUS
+This is a guide to using naming conventions in the MORPHEUS portal. 
 
-The need for namespacing the portal code has become apparent in the early development of MORPHEUS. We've experienced issues with 3rd party libraries overriding portal css when they share the same name. This is exacerbated when we try inlining the iFrames and 3rd party CSS libraries are introduced within the body of the page and now compete directly with the portal CSS.   
+### Why do we need to namespace the portal?
+The need for namespacing the portal code has become apparent in the early development of MORPHEUS. We've experienced issues with 3rd party libraries overriding portal css when they share the same name. This is exacerbated when we tried inlining the tools' iFrames. The 3rd party CSS libraries are written in the body of the page and override the portal's CSS in the document head.   
+
+MORPHEUS uses a modified version of [SMACSS](https://smacss.com) (Scalable and Modular Architecture for CSS) as it's categorization methodology. We're using some of the naming  conventions used by [BEM](http://bem.info/method/definitions/) (Block, Element, Modifier) as we found this to be the most scannable method when looking at the source HTML.
 
 ### Namespace
 
@@ -58,8 +62,8 @@ Sakai-searchBox__label.is-hidden
 
 ## References
 
-[CSS is a Mess](http://vimeo.com/99877232) – Jonathan Snook – __Beyond Tellerrand__, _Düsseldorf_: 2014 (video)
-
-[Experimenting with component-based HTML/CSS naming and patterns](https://gist.github.com/necolas/1309546) - Nicolas Gallagher
-
-[CSS Components, Modifiers, and Subcomponents Collection](https://github.com/bjankord/CSS-Components-Modifiers-And-Subcomponents-Collection) - Brett Jankord
+* [CSS is a Mess](http://vimeo.com/99877232) – Jonathan Snook – __Beyond Tellerrand__, _Düsseldorf_: 2014 (video)
+* [Experimenting with component-based HTML/CSS naming and patterns](https://gist.github.com/necolas/1309546) - Nicolas Gallagher
+* [CSS Components, Modifiers, and Subcomponents Collection](https://github.com/bjankord/CSS-Components-Modifiers-And-Subcomponents-Collection) - Brett Jankord
+* [SMACSS](https://smacss.com) (Scalable and Modular Architecture for CSS)
+* [BEM](http://bem.info/method/definitions/) ( Block, Element, Modifier)
