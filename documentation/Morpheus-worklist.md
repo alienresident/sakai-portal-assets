@@ -48,7 +48,7 @@ Is this a list of all the files to do with creating a header for tools?
 ### Portal work that needs to be done
 * Menus Responsive positioning (M)
 * Icon font (M)
-* Build Script (M|NYU) 
+* ~~Build Script (M|NYU) ~~
 * Footer (G)
 * Javascript: To optionally set the drop down on the site menus (G)
 
@@ -56,7 +56,7 @@ Is this a list of all the files to do with creating a header for tools?
 * Markup for Tool Nav (G)
 * Tool head add IE stylesheets (G will investigate)
 * Add tool.id class to body tag (G will investigate)
-* HTML 5 and ARIA are we covering the basics
+* HTML 5 and ARIA are we covering the basics?
 * Role Switcher to drop down from Select Menu (G)
 * Morpheus language bundle can we change things independently from Neo
 
@@ -71,4 +71,8 @@ Is this a list of all the files to do with creating a header for tools?
 4. Flesh out examples skins
 5. User Testing
 6. Documentation
+
+### To dos
+* Add [color contrast mixin](https://github.com/voxpelli/sass-color-helpers) to report WCAG contrast issues
+
 
