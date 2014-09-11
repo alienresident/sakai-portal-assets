@@ -12,18 +12,18 @@ MORPHEUS uses a modified version of [SMACSS](https://smacss.com) (Scalable and M
 
 ### Namespace
 
-CSS must be namespaced using `Sakai-` which should be written in __PascalCase__.
+CSS must be namespaced using `Mrphs-` which should be written in __PascalCase__.
 
 ```
-Sakai-
+Mrphs-
 ``` 
 
 ### Modules
 Modules are the reusable, modular parts of our design. Modules should be named using __camelCase__.    
-This maintains the existing class naming convention in the neo skins and in the underlying Java code. However they should now be prefixed with the `Sakai-` namespace.
+This maintains the existing class naming convention in the neo skins and in the underlying Java code. However they should now be prefixed with the `Mrphs-` namespace.
 
 ```
-Sakai-toolNav
+Mrphs-toolNav
 ```
 
 
@@ -31,8 +31,8 @@ Sakai-toolNav
 Modifers change the base module Modifiers are suffixed to modules using two hyphens `--`. Modifiers should be named using __lowercase__.
 
 ```
-Sakai-toolNav--large
-Sakai-button--cancel
+Mrphs-toolNav--large
+Mrphs-button--cancel
 
 ```
 
@@ -41,7 +41,7 @@ Sakai-button--cancel
 Base modules can have additional elements and they are subclassed using two underscores `__` written in __lowercase__ 
 
 ```
-Sakai-searchBox__label
+Mrphs-searchBox__label
 
 ```
 
@@ -55,9 +55,9 @@ is-hidden
 However states should be chained to their module, modifier, or element. 
 
 ```
-Sakai-portalWrapper.is-logged-out
-Sakai-navHeader--small.is-minimized
-Sakai-searchBox__label.is-hidden
+Mrphs-portalWrapper.is-logged-out
+Mrphs-navHeader--small.is-minimized
+Mrphs-searchBox__label.is-hidden
 ```
 
 ## References
