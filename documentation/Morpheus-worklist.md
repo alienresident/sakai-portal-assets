@@ -1,5 +1,5 @@
 # MORPHEUS
-__M__obile __O__ptimized __R__esponsive __P__ortal for __H__igher __E__ducation __U__sing __S__ass
+<strong>M</strong>obile <strong>O</strong>ptimized <strong>R</strong>esponsive <strong>P</strong>ortal for <strong>H</strong>igher <strong>E</strong>ducation <strong>U</strong>sing <strong>S</strong>ass
 
 New UI for Sakai CLE (10). A new (responsive) User Interface portal skin initiative is in development. Help contribute ideas, design, and code towards a new style guide  and design pattern library.
 
