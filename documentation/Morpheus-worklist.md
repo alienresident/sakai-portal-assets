@@ -1,11 +1,11 @@
 # MORPHEUS
-Mobile Optimized Responsive Portal for Higher Education Using Sass
+__M__obile __O__ptimized __R__esponsive __P__ortal for __H__igher __E__ducation __U__sing __S__ass
 
 New UI for Sakai CLE (10). A new (responsive) User Interface portal skin initiative is in development. Help contribute ideas, design, and code towards a new style guide  and design pattern library.
 
 ## Current Dev Questions
 
-* Dev documentation and assets is now in a [GitHub repo](https://github.com/alienresident/sakai-portal-assets)	
+* Dev documentation and assets are now in a [GitHub repo](https://github.com/alienresident/sakai-portal-assets)	
 	* Gonzalo's github account: [gsilver](https://github.com/gsilver)
 	 		
 * ~~Getting into Trunk Friday 2/7?~~ DONE!!

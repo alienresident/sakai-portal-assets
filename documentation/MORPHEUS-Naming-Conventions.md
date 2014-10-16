@@ -28,7 +28,7 @@ Mrphs-toolNav
 
 
 ### Module Modifiers
-Modifers change the base module Modifiers are suffixed to modules using two hyphens `--`. Modifiers should be named using __lowercase__.
+Modifers are changes that extend the base module. Modifiers are suffixed to their modules using two hyphens `--`. Modifiers should be named using __lowercase__.
 
 ```
 Mrphs-toolNav--large
