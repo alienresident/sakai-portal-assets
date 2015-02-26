@@ -1,6 +1,8 @@
 # Naming Conventions for MORPHEUS
 
 * [CSS](#CSS-Naming-Conventions-for-MORPHEUS)
+* [SASS](#SASS-Naming-Conventions-for-MORPHEUS)
+* [JS](#JS-Naming-Conventions-for-MORPHEUS)
 
 ## CSS Naming Conventions for MORPHEUS
 This is a guide to using naming conventions in the MORPHEUS portal. 
@@ -101,9 +103,72 @@ js-action-name
 ##### Examples
 
 ```
-js-nav-toggle-max
+js-nav-toggle-min
 js-nav-toggle-normal
 ```
+
+## SASS Naming Conventions for MORPHEUS
+
+### Variables
+
+Variables should begin with their module's name in __camelCase__. It should be followed by the css rule separated by two underscores `__` and written in __lowercase__.  Modifiers are suffixed to their module name using two hyphens `--` before the css rule and should be named using __lowercase__. Rarely you'll need to add a modifier to the css rule and that should be suffixed to the css rule using two hyphens `--` and written in __lowercase__. 
+
+##### Pattern
+
+```
+$moduleName__css-rule: value;
+$moduleName--modifier__css-rule: value;
+```
+
+##### Examples
+
+```
+$mainNav__color: red;
+$mainNav--hover__color: orange;
+```
+##### Pattern
+
+```
+$moduleName__css-rule: value;
+$moduleName__css-rule--modifier: value;
+$moduleName--modifier__css-rule--modifier: value;
+```
+##### Examples
+
+```
+$mainNav__background: #ffff33; // Fallback for older browsers
+$mainNav__background--rgba: rgba(0, 0, 255,.75);
+$mainNav--hover__background--rgba: rgba(0, 0, 255,1);
+```
+
+## JS Naming Conventions for MORPHEUS
+
+In HTML css classes starting with `js-` are used for JS hooks [see above](#Javascript-Hooks). 
+
+### JS Filenames 
+#### Portal scripts
+Custom portal scripts should be named in lowercase and separated with periods. The should start with `sakai.morpheus.` followed by a descriptive name i.e. `descriptive.name` with the file extension `.js`. The code should be modular and placed in the `js/src/` directory. Grunt will concatenate, uglify, and minify the code to create `morpheus.scripts.min.js`.
+
+##### Pattern
+
+```
+sakai.morpheus.descriptive.name.js
+```
+##### Examples
+
+```
+sakai.morpheus.details.js
+sakai.morpheus.responsive.menus.js
+```
+
+#### Plugins
+Plugins for the portal should maintain their original names and should be placed in the `js/plugins/` directory. Grunt will concatenate, uglify, and minify the code to create `morpheus.plugins.min.js`.
+
+#### IE Only JS
+JS for IE 8 and below should be placed in the `js/ie/` directory.
+
+#### Libraries
+Customized libraries such as modernizer can be placed in the `js/lib/` directory.
 
 ## References
 
