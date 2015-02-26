@@ -3,14 +3,14 @@
 * [CSS](#CSS-Naming-Conventions-for-MORPHEUS)
 * [SASS](#SASS-Naming-Conventions-for-MORPHEUS)
 * [JS](#JS-Naming-Conventions-for-MORPHEUS)
-
-## CSS Naming Conventions for MORPHEUS
-This is a guide to using naming conventions in the MORPHEUS portal. 
-
+ 
 ### Why do we need to namespace the portal?
 The need for namespacing the portal code has become apparent in the early development of MORPHEUS. We've experienced issues with 3rd party libraries overriding portal css when they share the same name. This is exacerbated when we tried inlining the tools' iFrames. The 3rd party CSS libraries are written in the body of the page and override the portal's CSS in the document head.   
 
 MORPHEUS uses a modified version of [SMACSS](https://smacss.com) (Scalable and Modular Architecture for CSS) as it's categorization methodology. We're using some of the naming  conventions used by [BEM](http://bem.info/method/definitions/) (Block, Element, Modifier) as we found this to be the most scannable method when looking at the source HTML.
+
+## CSS Naming Conventions for MORPHEUS
+This is a guide to using naming conventions in the MORPHEUS portal.
 
 ### Namespace
 
