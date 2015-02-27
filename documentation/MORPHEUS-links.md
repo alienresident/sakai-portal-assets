@@ -33,9 +33,8 @@ The most current documentation will always be  in the [README.md](https://github
 
 Additionally, there's another GitHub Repo for [Sakai Assets and Documentation](https://github.com/alienresident/sakai-portal-assets/) that don't belong in the main repo.
 
-* [Creating Sass based skins for Sakai 10](https://github.com/sakaiproject/sakai/tree/master/reference/library/src/webapp/skin/morpheus-master/README.md) Getting Started (in the SVN Repo)
+* [Creating Sass based skins for Sakai 11](https://github.com/sakaiproject/sakai/tree/master/reference/library/src/webapp/skin/morpheus-master/README.md) Getting Started (in the GitHub Repo)
 * [Adding Sass to Sakai](https://github.com/alienresident/sakai-portal-assets/blob/master/documentation/Adding-Sass-to-Sakai.md) How the Sass compile script works 
 * [Naming Conventions for MORPHEUS](https://github.com/alienresident/sakai-portal-assets/blob/master/documentation/MORPHEUS-Naming-Conventions.md) Naming Conventions of classes in the VM templates and Sass, CSS, and JS files.
-* 
 
  
