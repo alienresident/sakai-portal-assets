@@ -178,3 +178,4 @@ Customized libraries such as modernizer can be placed in the `js/lib/` directory
 * [SMACSS](https://smacss.com) (Scalable and Modular Architecture for CSS)
 * [BEM](http://bem.info/method/definitions/) ( Block, Element, Modifier)
 * [Global scope, Namespacing & CSS](https://medium.com/@ahmedelgabri/global-scope-namespacing-css-681bda44c43e) Protecting your CSS from outsiders — Ahmed El Gabri
+* [More Transparent UI Code with Namespaces](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/)
